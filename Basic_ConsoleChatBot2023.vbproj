@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7FA2A3BB-77A8-427A-9990-13EAD03008DD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>BasicConsoleChatBot2023.EntryPoint</StartupObject>
-    <RootNamespace>BasicConsoleChatBot2023</RootNamespace>
-    <AssemblyName>BasicConsoleChatBot2023</AssemblyName>
+    <StartupObject>SpydazWebAI.ConsoleChatBot.EntryPoint</StartupObject>
+    <RootNamespace>SpydazWebAI.ConsoleChatBot</RootNamespace>
+    <AssemblyName>SpydazWebAI.ConsoleChatBot</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>BasicConsoleChatBot2023.xml</DocumentationFile>
+    <DocumentationFile>SpydazWebAI.ConsoleChatBot.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>BasicConsoleChatBot2023.xml</DocumentationFile>
+    <DocumentationFile>SpydazWebAI.ConsoleChatBot.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -46,6 +46,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LCARS_ICON_APP.ICO</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -74,6 +77,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -106,6 +110,9 @@
     </None>
     <None Include="App.config" />
     <None Include="ReadME.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LCARS_ICON_APP.ICO" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
